@@ -16,15 +16,11 @@ This works for me on Mac OS X 10.7.4 with Xcode 4.4 and its command line tools.
 3. Download the latest version of the [rEFInd source](http://sourceforge.net/projects/refind/files/) into the RefindPkg directory and unpack it.
 
         $ cd RefindPkg
-        $ wget http://downloads.sourceforge.net/project/refind/0.4.5/refind-src-0.4.5.zip
-        $ unzip refind-src-0.4.5.zip
-
-4. Create a symlink so that the path referred to in the DSC file makes sense.
-
-        $ ln -s refind-0.4.5 refind
-
-5. Build the package.
+        $ git clone git://git.code.sf.net/u/jief7/refind refind-master
+        
+4. Build the package.
 
         $ cd ..
         $ source edksetup.sh
-        $ build -p RefindPkg/RefindPkg.dsc
+        $ cd RefindPkg
+        $ ./ebuild
