@@ -72,5 +72,5 @@
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
 
 [Components]
-  RefindPkg/refind/refind.inf
+  RefindPkg/refind-master/refind.inf
 
