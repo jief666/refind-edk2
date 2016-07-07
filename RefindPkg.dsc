@@ -71,6 +71,11 @@
   MemoryAllocationLib|MdePkg/Library/UefiMemoryAllocationLib/UefiMemoryAllocationLib.inf
   HobLib|MdePkg/Library/DxeHobLib/DxeHobLib.inf
 
+  #
+  # Our libs
+  #
+  MemLogLib|RefindPkg/refind-master/Library/MemLogLibDefault/MemLogLibDefault.inf
+
 [Components]
   RefindPkg/refind-master/refind.inf
 
