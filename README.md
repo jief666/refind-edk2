@@ -6,21 +6,29 @@ This works for me on Mac OS X 10.7.4 with Xcode 4.4 and its command line tools.
 
 ## Building
 
+0. Be sure to have nasm updated from original Os X version
+	NASM version 0.98.40 (Apple Computer, Inc. build 11) compiled on Mar 10 2015 won't work.
+	
+	
 1. Prepare and build your EDKII environment (outside of the scope of this document).
+        $ cd /path/to/project
+        $ git clone https://github.com/tianocore/edk2.git edk2
+        $ cd edk2
+        $ source edksetup.sh
+        $ make -C ./BaseTools/Source/C
+
 
 2. Clone this repository into the root directory of the EDKII.
 
-        $ cd /path/to/edk2
         $ git clone https://github.com/jief666/refind-edk2.git RefindPkg
 
-3. Download the latest version of the [rEFInd source](http://sourceforge.net/projects/refind/files/) into the RefindPkg directory and unpack it.
+
+3. Clone a refind source repository. Example with my fork. Might not be up to date.
 
         $ cd RefindPkg
-        $ git clone git://git.code.sf.net/u/jief7/refind refind-master
+        $ git clone git://git.code.sf.net/u/jief7/refind
+
         
 4. Build the package.
 
-        $ cd ..
-        $ source edksetup.sh
-        $ cd RefindPkg
         $ ./ebuild

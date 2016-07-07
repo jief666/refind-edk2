@@ -5,9 +5,9 @@
   PACKAGE_VERSION                = 4.5.0
 
 [Includes]
-  refind-master/include
+  refind/include
 
 [LibraryClasses]
   ##  @libraryclass  Provides MsgLog service
   ##
-  MemLogLib|refind-master/Include/Library/MemLogLib.h
+  MemLogLib|refind/Include/Library/MemLogLib.h

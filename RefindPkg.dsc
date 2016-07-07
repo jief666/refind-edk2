@@ -74,8 +74,8 @@
   #
   # Our libs
   #
-  MemLogLib|RefindPkg/refind-master/Library/MemLogLibDefault/MemLogLibDefault.inf
+  MemLogLib|RefindPkg/refind/Library/MemLogLibDefault/MemLogLibDefault.inf
 
 [Components]
-  RefindPkg/refind-master/refind.inf
+  RefindPkg/refind/refind.inf
 
