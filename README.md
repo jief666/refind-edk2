@@ -11,12 +11,12 @@ This works for me on Mac OS X 10.7.4 with Xcode 4.4 and its command line tools.
 2. Clone this repository into the root directory of the EDKII.
 
         $ cd /path/to/edk2
-        $ git clone https://github.com/snarez/refind-edk2.git RefindPkg
+        $ git clone -b MemLog https://github.com/jief666/refind-edk2.git RefindPkg
 
 3. Download the latest version of the [rEFInd source](http://sourceforge.net/projects/refind/files/) into the RefindPkg directory and unpack it.
 
         $ cd RefindPkg
-        $ git clone git://git.code.sf.net/u/jief7/refind refind-master
+        $ git clone -b MemLog git://git.code.sf.net/u/jief7/refind refind-master
         
 4. Build the package.
 

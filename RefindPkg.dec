@@ -4,6 +4,10 @@
   PACKAGE_GUID                   = 0eae8e1b-55be-4c3c-852a-f0273e22ca3c
   PACKAGE_VERSION                = 4.5.0
 
-
-[Includes.X64]
+[Includes]
   refind-master/include
+
+[LibraryClasses]
+  ##  @libraryclass  Provides MsgLog service
+  ##
+  MemLogLib|refind-master/Include/Library/MemLogLib.h
